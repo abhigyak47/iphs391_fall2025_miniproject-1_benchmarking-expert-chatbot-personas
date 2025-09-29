@@ -1,0 +1,133 @@
+Persona Quality Rubric — chat_rubric.txt
+=================================================
+Version: 1.0
+Use: Academic evaluation + student self-assessment of chatbot persona quality for multi-turn conversations (≥10 turns).
+
+TOTAL SCORE (0–100)
+-------------------
+Total = 0.20·Consistency + 0.10·Depth + 0.25·Authenticity + 0.15·Creativity + 0.30·Engagement
+
+Weights
+- w1 Consistency = 20%
+- w2 Depth       = 10%
+- w3 Authenticity= 25%
+- w4 Creativity  = 15%
+- w5 Engagement  = 30%
+
+General Instructions
+--------------------
+1) Read the persona prompt and the full dialogue (at least 10 turns) once without scoring.
+2) Read again and mark evidence for each factor (quotes, turn numbers).
+3) Score each factor 0–100 using the bands below. Be specific; avoid halo effects.
+4) Compute the weighted total with the formula above.
+5) Write 2–4 strengths and 2–4 improvements that map directly to factors.
+
+FACTOR 1 — CONSISTENCY (20%)
+----------------------------
+What to measure (works for any persona):
+- Voice & Mannerisms: Stable tone/diction that match the persona brief (e.g., clinician, detective, coach).
+- Cognitive Boundaries: Adheres to knowledge/tools/ethics constraints; states uncertainty when appropriate.
+- Behavioral Commitments: Persona “rituals” or style rules (e.g., always offers checklist first) are followed across turns.
+- Instruction Hierarchy: Persona/safety rules override casual user nudges.
+
+Scoring bands:
+- 90–100: No lapses; voice + rules steady across all/most turns.
+- 75–89: 1–2 minor slips; overall steady persona.
+- 60–74: Several generic or out-of-character patches; persona still recognizable.
+- 40–59: Frequent breaks in voice or rules.
+- <40: Largely not in character.
+
+FACTOR 2 — DEPTH (10%)
+----------------------
+What to measure:
+- Substance: Accurate domain facts, procedures, or frameworks beyond surface-level gloss.
+- Actionability: Concrete steps, parameters, scripts, code, or examples the user can execute.
+- Nuance: Trade-offs, edge cases, failure modes; realistic time/cost ranges.
+
+Scoring bands:
+- 90–100: Highly actionable, domain-savvy, and realistic.
+- 75–89: Strong detail with occasional thin spots.
+- 60–74: Mixed depth—some concrete tips, some hand-wavy parts.
+- 40–59: Mostly generalities; limited practical value.
+- <40: Superficial.
+
+FACTOR 3 — AUTHENTICITY (25%)
+-----------------------------
+What to measure:
+- Believability: Responses align with persona’s biography/locale/expertise/values.
+- Embodied Detail: Specific sensory/procedural/jargon details a real expert/character would know.
+- Internal Coherence: No contradictions with earlier self-claims; avoids “generic AI narrator.”
+
+Scoring bands:
+- 90–100: Feels like a real person/expert; rich, specific detail supports guidance.
+- 75–89: Several authentic touches; a few generic phrases.
+- 60–74: Some authentic color, but often generic.
+- 40–59: Rare/ornamental authenticity; thin texture.
+- <40: Vague/boilerplate; breaks the illusion.
+
+FACTOR 4 — CREATIVITY (15%)
+---------------------------
+What to measure:
+- Inventive Framing: Fresh analogies, structures, or narratives that fit the persona.
+- Appropriate Divergence: Novel but on-brief suggestions (alternate solution paths, creative options).
+- Constraint-Aware Flair: Originality without breaking safety/accuracy.
+
+Scoring bands:
+- 90–100: Original, memorable touches that elevate usefulness and stay on-brief.
+- 75–89: Some creative flourishes; generally conventional.
+- 60–74: Occasional novelty; mostly template-like.
+- 40–59: Flat or off-brief attempts at novelty.
+- <40: Little creativity or derailing “randomness.”
+
+FACTOR 5 — ENGAGEMENT (30%)
+---------------------------
+What to measure:
+- Dialogue Management: Early clarifying/discovery questions; revisits constraints; adapts to evolving goals.
+- Pedagogy/Coaching: Teaches small, timely skills (heuristics, checklists, examples) tailored to the moment.
+- Follow-Through: Answers multi-part questions thoroughly; offers next steps/alternatives; maintains momentum.
+- Affect: Warmth or appropriate persona affect that invites further interaction.
+
+Scoring bands:
+- 90–100: Highly interactive; anticipates needs; teaches proactively; excellent follow-ups.
+- 75–89: Engaging with a few missed teachable moments or sub-questions.
+- 60–74: Adequate; some missed opportunities; occasional one-shot replies.
+- 40–59: Minimal engagement; limited adaptation.
+- <40: Transactional; poor multi-turn awareness.
+
+Scoring Worksheet (print or copy into a sheet)
+----------------------------------------------
+Conversation ID: __________   Persona: __________   Evaluator: __________
+
+| Factor        | Weight | Evidence (quotes/turns)                    | Score (0–100) |
+|---------------|:------:|--------------------------------------------|:-------------:|
+| Consistency   |  0.20  |                                            |               |
+| Depth         |  0.10  |                                            |               |
+| Authenticity  |  0.25  |                                            |               |
+| Creativity    |  0.15  |                                            |               |
+| Engagement    |  0.30  |                                            |               |
+
+Final = 0.20·C + 0.10·D + 0.25·A + 0.15·Cr + 0.30·E = ______ / 100
+
+Short Narrative Feedback
+------------------------
+Strengths (map to factors):
+1) ________________________________________________
+2) ________________________________________________
+3) ________________________________________________
+4) ________________________________________________
+
+Improvements (map to factors):
+1) ________________________________________________
+2) ________________________________________________
+3) ________________________________________________
+4) ________________________________________________
+
+Adaptation Notes (to fit any persona)
+-------------------------------------
+- Replace persona-specific “rituals” in Consistency with the new persona’s required behaviors (e.g., cites papers; begins with a differential diagnosis; uses nautical metaphors; never uses emojis).
+- Depth indicators are domain-agnostic: for coding tutor—runnable snippets + tests; for therapist—structured, ethical interventions and boundaries; for analyst—assumptions + scenarios + sensitivity.
+- Authenticity demands concrete, plausible details consistent with the claimed background (correct jargon, locale-specific references, professional ethics).
+- Creativity should serve the user goal and persona constraints; penalize novelty that harms accuracy or tone.
+- Engagement is universal: discovery questions, multi-part handling, pedagogy, and clear next steps.
+
+End of file.
